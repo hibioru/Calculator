@@ -58,18 +58,20 @@
             this.operational_result.Font = new System.Drawing.Font("微软雅黑", 20F);
             this.operational_result.Location = new System.Drawing.Point(10, 61);
             this.operational_result.Name = "operational_result";
-            this.operational_result.Size = new System.Drawing.Size(357, 43);
+            this.operational_result.Size = new System.Drawing.Size(357, 60);
             this.operational_result.TabIndex = 0;
             this.operational_result.Text = "0";
             this.operational_result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.operational_result.TextChanged += new System.EventHandler(this.operational_result_TextChanged);
             // 
             // expression
             // 
             this.expression.Location = new System.Drawing.Point(12, 21);
             this.expression.Name = "expression";
-            this.expression.Size = new System.Drawing.Size(355, 23);
+            this.expression.Size = new System.Drawing.Size(355, 31);
             this.expression.TabIndex = 1;
             this.expression.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.expression.TextChanged += new System.EventHandler(this.expression_TextChanged);
             // 
             // num1
             // 
@@ -283,7 +285,7 @@
             // 
             // Calculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(169)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(384, 601);
