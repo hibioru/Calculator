@@ -297,7 +297,9 @@ namespace 计算器
             if (step == 1)
             {
                 a = double.Parse(textBox1.Text);
+                listBox2.Items.Add(a.ToString());
                 m = "-";
+                listBox2.Items.Add(m.ToString());
                 step = 2;
                 c = false;
                 ms = false;
@@ -349,7 +351,9 @@ namespace 计算器
             if (step == 1)
             {
                 a = double.Parse(textBox1.Text.ToString());
+                listBox2.Items.Add(a.ToString());
                 m = "*";
+                listBox2.Items.Add(m.ToString());
                 step = 2;
                 c = false;
                 ms = false;
@@ -400,7 +404,9 @@ namespace 计算器
             if (step == 1)
             {
                 a = double.Parse(textBox1.Text.ToString());
+                listBox2.Items.Add(a.ToString());
                 m = "/";
+                listBox2.Items.Add(m.ToString());
                 step = 2;
                 c = false;
                 ms = false;
@@ -450,6 +456,7 @@ namespace 计算器
             if (es == true)
             {
                 b = double.Parse(textBox1.Text.ToString());
+                listBox2.Items.Add(b.ToString());
                 ms = true;
                 switch (m)
                 {
@@ -467,6 +474,7 @@ namespace 计算器
                         break;
                 }
                 textBox1.Text = answer.ToString();
+                listBox2.Items.Add("=");
                 listBox2.Items.Add(answer.ToString());
                 step = 1;
                 c = false;
@@ -476,6 +484,9 @@ namespace 计算器
             else
             {
                 a = double.Parse(textBox1.Text.ToString());
+                listBox2.Items.Add(m.ToString());
+                listBox2.Items.Add(b.ToString());
+                listBox2.Items.Add("=");
                 switch (m)
                 {
                     case "+":
@@ -492,6 +503,7 @@ namespace 计算器
                         break;
                 }
                 textBox1.Text = answer.ToString();
+                listBox2.Items.Add(answer.ToString());
             }
         }
 
@@ -553,6 +565,11 @@ namespace 计算器
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Clear();
         }
     }
 }
