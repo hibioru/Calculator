@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whac-A-Mole", "Whac-A-Mole.csproj", "{B99FE783-CF9E-4A5E-8721-2A02B53869C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B99FE783-CF9E-4A5E-8721-2A02B53869C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99FE783-CF9E-4A5E-8721-2A02B53869C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99FE783-CF9E-4A5E-8721-2A02B53869C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99FE783-CF9E-4A5E-8721-2A02B53869C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E48DF488-0439-477E-92DC-4D77E492AF78}
+	EndGlobalSection
+EndGlobal
